@@ -1,0 +1,11 @@
+#maquette {
+    height:120vh;
+    width:100%;
+    display:grid;
+    grid-template-rows:1fr 5fr 1fr;
+}
+
+#maquette > main {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
