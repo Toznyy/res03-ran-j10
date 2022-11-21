@@ -17,6 +17,7 @@
         <main>
             <section id="left">
                 <h2>Informations de connexion</h2>
+                <fieldset>
                     <label for="nom">Nom d'utilisateur</label><br>
                     <input type="text" name="nom" id="nom"><br>
                     <label for="email">Email</label><br>
@@ -26,64 +27,79 @@
                     <label for="confirmpd">Confirmer le mot de passe</label><br>
                     <input type="text" name="confirmdp" id="confirmdp"><br><br>
                     <input type="submit" value="Enregistrer">
+                </fieldset>
             </section>
             <section id="center">
                 <h2>Profil professionnel</h2>
-                <p>Niveau d'études<br><br>
-                    <input type="radio" name="niveaudetudes" value="capbep" id="capbep"> 
-                    <label for="capbep">CAP - BEP</label><br>
-                    <input type="radio" name="niveaudetudes" value="bac" id="bac"> 
-                    <label for="bac">Bac </label><br>
-                    <input type="radio" name="niveaudetudes" value="bac+2" id="bac+2"> 
-                    <label for="bac+2">Bac + 2</label><br>
-                    <input type="radio" name="niveaudetudes" value="bac+3" id="bac+3"> 
-                    <label for="bac+3">Bac + 3</label><br>
-                    <input type="radio" name="niveaudetudes" value="bac+5" id="bac+5"> 
-                    <label for="bac+5">Bac + 5</label><br>
-                    <input type="radio" name="niveaudetudes" value="bac+7" id="bac+7"> 
-                    <label for="bac+7">Bac + 7</label><br>
-                </p>
-                <p>Profil de développeur<br><br>
-                    <input type="radio" name="profildev" value="backend" id="backend"> 
-                    <label for="backend">Dev Web Backend</label><br>
-                    <input type="radio" name="profildev" value="frontend" id="frontend"> 
-                    <label for="frontend">Dev Web Frontend</label><br>
-                    <input type="radio" name="profildev" value="fullstack" id="fullstack"> 
-                    <label for="fullstack">Dev Web Fullstack</label><br>
-                    <input type="radio" name="profildev" value="jeuxvideo" id="jeuxvideo"> 
-                    <label for="jeuxvideo">Dev Jeux Vidéo</label><br>
-                    <input type="radio" name="profildev" value="logiciel" id="logiciel"> 
-                    <label for="logiciel">Dev Logiciel</label><br>
-                    <input type="radio" name="profildev" value="mobile" id="mobile"> 
-                    <label for="mobile">Dev Mobile</label><br>
-                </p>
-                <input type="submit" value="Enregistrer">
+                <fieldset>
+                    <p id="etudes">Niveau d'études<br><br>
+                        <fieldset>
+                            <input type="radio" name="niveaudetudes" value="capbep" id="capbep"> 
+                            <label for="capbep">CAP - BEP</label><br>
+                            <input type="radio" name="niveaudetudes" value="bac" id="bac"> 
+                            <label for="bac">Bac</label><br>
+                            <input type="radio" name="niveaudetudes" value="bac+2" id="bac+2"> 
+                            <label for="bac+2">Bac + 2</label><br>
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" name="niveaudetudes" value="bac+3" id="bac+3"> 
+                            <label for="bac+3">Bac + 3</label><br>
+                            <input type="radio" name="niveaudetudes" value="bac+5" id="bac+5"> 
+                            <label for="bac+5">Bac + 5</label><br>
+                            <input type="radio" name="niveaudetudes" value="bac+7" id="bac+7"> 
+                            <label for="bac+7">Bac + 7</label><br>
+                        </fieldset>
+                    </p id="profil">
+                    <p>Profil de développeur<br><br>
+                        <fieldset>
+                            <input type="radio" name="profildev" value="backend" id="backend"> 
+                            <label for="backend">Dev Web Backend</label><br>
+                            <input type="radio" name="profildev" value="frontend" id="frontend"> 
+                            <label for="frontend">Dev Web Frontend</label><br>
+                            <input type="radio" name="profildev" value="fullstack" id="fullstack"> 
+                            <label for="fullstack">Dev Web Fullstack</label><br><br>
+                            <input type="submit" value="Enregistrer">
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" name="profildev" value="jeuxvideo" id="jeuxvideo"> 
+                            <label for="jeuxvideo">Dev Jeux Vidéo</label><br>
+                            <input type="radio" name="profildev" value="logiciel" id="logiciel"> 
+                            <label for="logiciel">Dev Logiciel</label><br>
+                            <input type="radio" name="profildev" value="mobile" id="mobile"> 
+                            <label for="mobile">Dev Mobile</label><br>
+                        </fieldset>
+                    </p>
+                </fieldset>
             </section>
             <section id="right">
                 <h2>Centres d'intérêt</h2>
-                <p>
-                    <input type="checkbox" name="interet" value="banque" id="banque"> 
-                    <label for="banque">Banque</label><br>
-                    <input type="checkbox" name="interet" value="pub" id="pub"> 
-                    <label for="pub">Publicité</label><br>
-                    <input type="checkbox" name="interet" value="finance" id="finance"> 
-                    <label for="finance">Finance</label><br>
-                    <input type="checkbox" name="interet" value="sante" id="sante"> 
-                    <label for="sante">Santé</label><br>
-                    <input type="checkbox" name="interet" value="com" id="com"> 
-                    <label for="com">Communication</label><br>
-                    <input type="checkbox" name="interet" value="def" id="def"> 
-                    <label for="def">Défense</label><br>
-                    <input type="checkbox" name="interet" value="education" id="education"> 
-                    <label for="education">Éducation</label><br>
-                    <input type="checkbox" name="interet" value="politique" id="politique"> 
-                    <label for="politique">Politique</label><br>
-                </p>
-                <input type="submit" value="Enregistrer">
+                <section id="3">
+                    <section class="partie1de3">
+                        <input type="checkbox" name="interet" value="banque" id="banque"> 
+                        <label for="banque">Banque</label><br>
+                        <input type="checkbox" name="interet" value="pub" id="pub"> 
+                        <label for="pub">Publicité</label><br>
+                        <input type="checkbox" name="interet" value="finance" id="finance"> 
+                        <label for="finance">Finance</label><br>
+                        <input type="checkbox" name="interet" value="sante" id="sante"> 
+                        <label for="sante">Santé</label><br>
+                        <input type="submit" value="Enregistrer">
+                    </section>
+                    <section class="partie2de3">
+                        <input type="checkbox" name="interet" value="com" id="com"> 
+                        <label for="com">Communication</label><br>
+                        <input type="checkbox" name="interet" value="def" id="def"> 
+                        <label for="def">Défense</label><br>
+                        <input type="checkbox" name="interet" value="education" id="education"> 
+                        <label for="education">Éducation</label><br>
+                        <input type="checkbox" name="interet" value="politique" id="politique"> 
+                        <label for="politique">Politique</label><br>
+                    </section>
+                </section>
             </section>
         </main>
         <header>
-            <h1>footer</h1>
+            <h1></h1>
         </header>
     </body>
 </html>

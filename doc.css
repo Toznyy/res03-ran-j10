@@ -1,5 +1,4 @@
 #maquette {
-    height:120vh;
     width:100%;
     display:grid;
     grid-template-rows:1fr 5fr 1fr;
@@ -8,4 +7,24 @@
 #maquette > main {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#etudes, #profil{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+#3 {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.partie1de3 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.partie2de3 {
+    grid-column: 2 / 3;
+    grid-row: 1;
 }
